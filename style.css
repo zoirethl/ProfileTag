@@ -1,0 +1,61 @@
+body {
+    background-color: gainsboro;
+    text-align: center;
+    background-blend-mode: color-burn;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    width: 400px;
+    height: 450px;
+    border-radius: 16px;
+    border: 2px solid black;
+    padding: 16px 16px 16px 16px;
+    gap: 4px;
+    box-sizing: border-box;
+    margin: auto;
+    margin-top: 2rem;
+    display: inline-block block;
+    
+}
+.socialmedia ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 2rem;
+        
+}
+.profilePic img {
+    width: 250px;
+    border-radius: 50%;
+}
+.socialmedia img{
+    width: 3rem;
+    height: 3rem;
+    -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0, .3));
+}
+
+.waviy {
+    position: relative;
+    -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0, .2));
+}
+
+.waviy span {
+    position: relative;
+    display: inline-block;
+    font-size: 2rem;
+    animation: waviy 3s infinite;
+    animation-delay: calc(.05s * var(--i));
+}
+
+@keyframes waviy {
+
+    0%,
+    40%,
+    100% {
+        transform: translateY(0)
+    }
+
+    20% {
+        transform: translateY(-15px)
+    }
+
+}
